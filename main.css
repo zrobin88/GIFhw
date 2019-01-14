@@ -1,0 +1,45 @@
+#gif-input{
+    position: relative; 
+    left: 40%; 
+}
+#add-gif{
+    margin-top: 20px; 
+    position: relative; 
+    left:35%; 
+
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+#clear{
+    margin-top: 20px; 
+    position: relative; 
+    left:45%
+}
+
+.jumbotron{
+    border-radius: 25px; 
+}
+
+#buttons-view{
+    margin-top: 20px; 
+    position: relative; 
+    left: 5%;
+}
+
+#body{
+    color: rgb(120, 224, 219);
+}
+
+.coolColor{
+   background-image: linear-gradient(rgba(51, 161, 224, 0.918), rgb(19, 148, 88));
+}
+
+.buttonStyle{
+    border-radius: 10px;
+    
+}

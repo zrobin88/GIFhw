@@ -1,0 +1,60 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GIPHY API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel ="stylesheet"type ="text/css" media="screen" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+<body class ="coolColor">
+<div class = "container">
+    <div class = "row">
+        <div class = "col-md-12">
+                <div class="jumbotron jumbotron-fluid bg-info">
+                        <div class="container">
+                          <h1 class="display-4">GIF MADNESS</h1>
+                          <p class="lead">Click a topic button to populate the page with GIFs! Add your own GIF topics in the search box.</p>
+                        </div>
+                      </div>
+               
+                <form id="gif-search" class ="coolColor">
+                    
+                    
+                        <label for="gif-input"></label>
+                        <input type="text" id="gif-input">
+                        <br>
+                    
+                        <!-- Button triggers new movie to be added -->
+                        <input id="add-gif" type="submit" class = "buttonStyle" value="Add a GIF">
+                        <button id = "clear" class = "buttonStyle">Clear</button>
+                      </form>
+                <!-- Rendered Buttons will get Dumped Here  -->
+              
+        <div class = "row">
+            <div class ="col-md-6">
+                    <div id="buttons-view"></div>
+            </div>
+            <div class = "col-md-6">
+               <div id="gif-div">
+                   
+               </div>
+            </div>
+        </div>       
+           
+        </div>
+    </div>
+        
+       
+   
+      
+</div>  
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
