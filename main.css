@@ -36,7 +36,7 @@ p{
 }
 
 .coolColor{
-   background-image: linear-gradient(rgba(51, 161, 224, 0.918), rgb(19, 148, 88));
+   background-image: linear-gradient(rgba(51, 161, 224, 0.918), rgb(19, 148, 88),);
 }
 
 .buttonStyle{
