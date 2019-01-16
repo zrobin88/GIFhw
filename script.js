@@ -1,6 +1,6 @@
 
 //array of topics for GIF buttons 
-const topics = ["music", "heavy metal", "guitar", "arnold schwarzenegger", "metallica", "star wars", "trailer park boys", "dimebag darrell", "goku", "vegeta"]
+const topics = ["music", "heavy metal", "guitar","south park", "arnold schwarzenegger", "metallica", "star wars", "trailer park boys", "stewie", "vader", "halo", "dimebag darrell", "goku", "vegeta"]
 
 
 //add gifs based on value of input 
