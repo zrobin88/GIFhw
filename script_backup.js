@@ -59,8 +59,11 @@ renderButtons();
 
 
 //create click event for buttons that generate gifs based on the name of each button 
+//let gifBtn = $(".topics-button").on("click", function () {
 
-//$(document).on instead of  to add event listeners to dynamically generated elements
+  
+
+  //$(document).on instead of  to add event listeners to dynamically generated elements
 $(document).on("click", ".topics-button", function () {
   //variable to hold button info (by name) in API key 
   let gifButton = $(this).attr("data-name");
@@ -81,11 +84,6 @@ $(document).on("click", ".topics-button", function () {
       imageDiv.addClass("img");
       imageDiv.attr("src", response.data[i].images.fixed_width_still.url);
       $("#gif-div").append(imageDiv);
-
-      $(".img").on("click", function(){
-        imageDiv.attr("src", response.data[i].images.fixed_width.url);
-      $("#gif-div").append(imageDiv);
-      })
     }
   });
 
@@ -93,3 +91,24 @@ $(document).on("click", ".topics-button", function () {
 
 
 
+//});
+
+
+
+
+
+  //ajax call to api 
+  //$.ajax({
+    //url: queryURL,
+   // method: "GET"
+  //}).then(function (response) {
+    //console.log(response)
+
+    //for (let i = 0; i < 10; i++) {
+
+     // let imageDiv = $("<img>");
+     // imageDiv.addClass("img");
+      //imageDiv.attr("src", response.data[i].images.fixed_width_still.url);
+     // $("#gif-div").append(imageDiv);
+   // }
+ // });
