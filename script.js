@@ -1,6 +1,6 @@
 
 //array of topics for GIF buttons 
-const topics = ["music", "heavy metal", "guitar","south park", "arnold schwarzenegger", "metallica", "star wars", "trailer park boys", "stewie", "vader", "halo", "dimebag darrell", "goku", "vegeta"]
+const topics = ["music", "heavy metal", "guitar", "south park", "arnold schwarzenegger", "metallica", "star wars", "trailer park boys", "stewie", "vader", "halo", "dimebag darrell", "goku", "vegeta"]
 
 
 //add gifs based on value of input 
@@ -79,14 +79,22 @@ $(document).on("click", ".topics-button", function () {
 
       let imageDiv = $("<img>");
       imageDiv.addClass("img");
-      imageDiv.attr("src", response.data[i].images.fixed_width_still.url);
+      let still = response.data[i].images.fixed_width_still.url;
+      imageDiv.attr("src", still);
       $("#gif-div").append(imageDiv);
+      let animate = response.data[i].images.fixed_width.url;
+      $(".img").on("click", function () {
+        var src = $(this).attr("src");
+        
+        imageDiv.attr("src",animate);
+        $("#gif-div").append(imageDiv);
 
-      $(".img").on("click", function(){
-        imageDiv.attr("src", response.data[i].images.fixed_width.url);
-      $("#gif-div").append(imageDiv);
+        
+
       })
+
     }
+
   });
 
 });
