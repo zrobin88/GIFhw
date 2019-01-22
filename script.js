@@ -65,7 +65,7 @@ $(document).on("click", ".topics-button", function () {
   //variable to hold button info (by name) in API key 
   let gifButton = $(this).attr("data-name");
   //var that holds api link and key 
-  let queryURL = "http://api.giphy.com/v1/gifs/search?q=" + gifButton + "&api_key=nrQ5ktF2K7HdVctvvKa70hbMfPiKAlo6";
+  let queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifButton + "&api_key=nrQ5ktF2K7HdVctvvKa70hbMfPiKAlo6";
 
 
   //ajax call to api 
